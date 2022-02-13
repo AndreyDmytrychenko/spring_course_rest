@@ -21,7 +21,7 @@ public class MyRESTController {
         return employees;
     }
 
-    @GetMapping("/employee/{id}")
+    @GetMapping("/employees/{id}")
     public Employee getEmployee(@PathVariable int id) {
         Employee employee = employeeService.getEmployee(id);
         if (employee == null) {
